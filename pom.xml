@@ -51,6 +51,8 @@
 
     <build>
         <extensions>
+            <!-- The os-maven-plugin extension/plugin generates various useful platform-dependent project properties,
+            like ${os.detected.classifier}. -->
             <extension>
                 <groupId>kr.motd.maven</groupId>
                 <artifactId>os-maven-plugin</artifactId>

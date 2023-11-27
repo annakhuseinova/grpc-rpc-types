@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07daf464-b2dd-4f9a-bc99-c20858065773" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BankService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GrpcServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/proto/bank-service.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/BankClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BalanceStreamObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CashStreamingRequestObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MoneyStreamingObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TransferRequestStreamObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TransferService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/transfer-service.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/BankUnaryServerClientBiStreamingClients.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GrpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/bank-service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/bank-service.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/BankClientTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -38,24 +48,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.BankClientTest.getBalanceTest">
+}</component>
+  <component name="RunManager" selected="JUnit.BankUnaryServerClientBiStreamingClients.getBalanceUnaryBlockingClient">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="grpc-rpc-types" />
@@ -82,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankClientTest.getBalanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankUnaryServerClientBiStreamingClients.getBalanceUnaryBlockingClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grpc-rpc-types" />
       <extension name="coverage">
         <pattern>
@@ -91,8 +101,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.client" />
-      <option name="MAIN_CLASS_NAME" value="org.example.client.BankClientTest" />
-      <option name="METHOD_NAME" value="getBalanceTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.client.BankUnaryServerClientBiStreamingClients" />
+      <option name="METHOD_NAME" value="getBalanceUnaryBlockingClient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,9 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BankClientTest.getBalanceTest" />
-        <item itemvalue="Application.GrpcServer" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.BankUnaryServerClientBiStreamingClients.getBalanceUnaryBlockingClient" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +122,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700669287845</updated>
-      <workItem from="1700669289528" duration="19507000" />
+      <workItem from="1700669289528" duration="23010000" />
+      <workItem from="1700898981547" duration="4409000" />
+      <workItem from="1700950335979" duration="25555000" />
+      <workItem from="1701025599660" duration="14599000" />
     </task>
     <servers />
   </component>
