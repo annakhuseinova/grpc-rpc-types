@@ -13,7 +13,7 @@ import org.junit.jupiter.api.TestInstance;
 import java.util.concurrent.CountDownLatch;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class BankUnaryServerClientBiStreamingClients {
+public class BankUnaryServerClientStreamingClients {
     private BankServiceGrpc.BankServiceBlockingStub blockingStub;
     private BankServiceGrpc.BankServiceStub asyncStub;
 

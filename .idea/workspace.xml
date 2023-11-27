@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07daf464-b2dd-4f9a-bc99-c20858065773" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BalanceStreamObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CashStreamingRequestObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MoneyStreamingObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TransferRequestStreamObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TransferService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/proto/transfer-service.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/BankUnaryServerClientBiStreamingClients.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bidirectional/streaming/TransferResponseStreamObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/BiStreamingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BankService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GrpcServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/bank-service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/bank-service.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/BankClientTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransferRequestStreamObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bidirectional/streaming/TransferRequestStreamObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bidirectional/streaming/TransferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/BankUnaryServerClientBiStreamingClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/BankUnaryServerClientStreamingClients.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +57,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.BankUnaryServerClientBiStreamingClients.getBalanceUnaryBlockingClient">
+  <component name="RunManager" selected="JUnit.BankUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="grpc-rpc-types" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.bidirectional.streaming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,7 +76,7 @@
       <module name="grpc-rpc-types" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.bidirectional.streaming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,7 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankUnaryServerClientBiStreamingClients.getBalanceUnaryBlockingClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grpc-rpc-types" />
       <extension name="coverage">
         <pattern>
@@ -101,7 +93,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.client" />
-      <option name="MAIN_CLASS_NAME" value="org.example.client.BankUnaryServerClientBiStreamingClients" />
+      <option name="MAIN_CLASS_NAME" value="org.example.client.BankUnaryServerClientStreamingClients" />
       <option name="METHOD_NAME" value="getBalanceUnaryBlockingClient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -110,7 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BankUnaryServerClientBiStreamingClients.getBalanceUnaryBlockingClient" />
+        <item itemvalue="JUnit.BankUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient" />
       </list>
     </recent_temporary>
   </component>
@@ -126,6 +118,7 @@
       <workItem from="1700898981547" duration="4409000" />
       <workItem from="1700950335979" duration="25555000" />
       <workItem from="1701025599660" duration="14599000" />
+      <workItem from="1701084693159" duration="10971000" />
     </task>
     <servers />
   </component>

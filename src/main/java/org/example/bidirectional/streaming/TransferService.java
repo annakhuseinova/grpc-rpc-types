@@ -1,4 +1,4 @@
-package org.example;
+package org.example.bidirectional.streaming;
 
 import io.grpc.stub.StreamObserver;
 import org.example.proto.TransferRequest;
@@ -9,6 +9,6 @@ public class TransferService extends TransferServiceGrpc.TransferServiceImplBase
 
     @Override
     public StreamObserver<TransferRequest> transfer(StreamObserver<TransferResponse> responseObserver) {
-        return super.transfer(responseObserver);
+        return new TransferRequestStreamObserver(responseObserver);
     }
 }
