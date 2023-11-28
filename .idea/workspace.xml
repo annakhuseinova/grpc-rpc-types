@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07daf464-b2dd-4f9a-bc99-c20858065773" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bidirectional/streaming/TransferResponseStreamObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/BiStreamingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GrpcServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransferRequestStreamObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bidirectional/streaming/TransferRequestStreamObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bidirectional/streaming/TransferService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/BankUnaryServerClientBiStreamingClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/BankUnaryServerClientStreamingClients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/BankUnaryServerClientStreamingClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/BankUnaryServerClientStreamingClients.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +51,26 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.BankUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient">
+  <component name="RunManager" selected="Application.Example">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="grpc-rpc-types" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.bidirectional.streaming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Example" />
+      <module name="grpc-rpc-types" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Example" />
         <item itemvalue="JUnit.BankUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient" />
       </list>
     </recent_temporary>
@@ -118,7 +126,8 @@
       <workItem from="1700898981547" duration="4409000" />
       <workItem from="1700950335979" duration="25555000" />
       <workItem from="1701025599660" duration="14599000" />
-      <workItem from="1701084693159" duration="10971000" />
+      <workItem from="1701084693159" duration="14302000" />
+      <workItem from="1701195219295" duration="2243000" />
     </task>
     <servers />
   </component>

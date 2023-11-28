@@ -20,6 +20,7 @@ public class BiStreamingTest {
 
     @BeforeAll
     void setUp(){
+        // ManagedChannel is an object that represents HTTP2 connection between Client and Server
         ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 6565)
                 .usePlaintext()
                 .build();

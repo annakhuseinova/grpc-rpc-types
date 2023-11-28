@@ -19,6 +19,7 @@ public class BankUnaryServerClientStreamingClients {
 
     @BeforeAll
     public void setUp(){
+        // ManagedChannel is an object that represents HTTP2 connection between Client and Server
         ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 6565)
                 .usePlaintext()
                 .build();
@@ -32,7 +33,8 @@ public class BankUnaryServerClientStreamingClients {
         BalanceCheckRequest request = BalanceCheckRequest.newBuilder()
                 .setAccountNumber(5)
                 .build();
-        Balance balance = this.blockingStub.getBalance(request);
+        Balance balance = this.blockingStub
+                .getBalance(request);
         System.out.println("Received balance: " + balance.getAmount());
     }
 
