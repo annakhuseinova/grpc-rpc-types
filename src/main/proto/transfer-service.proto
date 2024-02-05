@@ -26,5 +26,6 @@ message TransferResponse {
 
 service TransferService {
 
+// bidirectional streaming
   rpc transfer(stream TransferRequest) returns (stream TransferResponse);
 }

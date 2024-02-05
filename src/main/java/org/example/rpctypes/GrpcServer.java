@@ -1,8 +1,8 @@
-package org.example;
+package org.example.rpctypes;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import org.example.bidirectional.streaming.TransferService;
+import org.example.rpctypes.bidirectionalstreaming.TransferService;
 
 import java.io.IOException;
 

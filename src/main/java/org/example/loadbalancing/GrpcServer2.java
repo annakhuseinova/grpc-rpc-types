@@ -5,10 +5,10 @@ import io.grpc.ServerBuilder;
 
 import java.io.IOException;
 
-public class GrpcServer1 {
+public class GrpcServer2 {
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        Server server = ServerBuilder.forPort(6565)
+        Server server = ServerBuilder.forPort(7575)
                 .addService(new BankService()) //
                 .build();
 

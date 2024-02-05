@@ -4,8 +4,8 @@ import com.google.common.util.concurrent.Uninterruptibles;
 import io.grpc.Context;
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
-import org.example.AccountDatabase;
-import org.example.CashStreamingRequestObserver;
+import org.example.rpctypes.AccountDatabase;
+import org.example.rpctypes.CashStreamingRequestObserver;
 import org.example.proto.*;
 
 import java.util.concurrent.TimeUnit;

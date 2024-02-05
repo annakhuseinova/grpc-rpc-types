@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07daf464-b2dd-4f9a-bc99-c20858065773" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/deadline/DeadlineService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/deadline/GrpcServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/DeadlineUnaryServerClientStreamingClients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/deadline/DeadlineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/deadline/DeadlineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/BankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/CashStreamingRequestObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/CashStreamingRequestObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/GrpcServer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/GrpcServer1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/GrpcServer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/GrpcServer2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/ServiceRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/ServiceRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/TempNameResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/TempNameResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/TempNameResolverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/TempNameResolverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/AccountDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/BalanceStreamObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/BalanceStreamObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/BankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/CashStreamingRequestObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/CashStreamingRequestObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/GrpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/MoneyStreamingObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/MoneyStreamingObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferRequestStreamObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferRequestStreamObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferResponseStreamObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferResponseStreamObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/transfer-service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/transfer-service.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/deadline/DeadlineUnaryServerClientStreamingClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/deadline/DeadlineUnaryServerClientStreamingClients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/loadbalancing/ClientSideLoadBalancingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/loadbalancing/ClientSideLoadBalancingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/loadbalancing/NginxTestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/loadbalancing/NginxTestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/rpctypes/BankUnaryServerClientStreamingClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/rpctypes/BankUnaryServerClientStreamingClients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/rpctypes/BiStreamingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/rpctypes/BiStreamingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +52,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2YXQ8kItpQHi6DruJ2UPM7gVynj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,8 +65,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.GrpcServer.executor": "Run",
+    "Application.GrpcServer1.executor": "Run",
+    "Application.GrpcServer2.executor": "Run",
     "Application.org.example.deadline.GrpcServer.executor": "Run",
+    "Docker.proto: Compose Deployment.executor": "Run",
+    "Docker.resources/docker-compose.yaml: Compose Deployment.executor": "Run",
     "JUnit.DeadlineUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient.executor": "Run",
+    "JUnit.NginxTestClient.getBalanceUnaryBlockingClient.executor": "Run",
     "Maven.grpc-rpc-types [compile].executor": "Run",
     "Maven.grpc-rpc-types [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -57,7 +80,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Anna/IdeaProjects/grpc-rpc-types/src/main/java/org/example/deadline",
+    "last_opened_file_path": "C:/Users/Anna/IdeaProjects/grpc-rpc-types/src/main/java/org/example/loadbalancing",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,21 +94,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\java\org\example\loadbalancing" />
       <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\java\org\example\deadline" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.loadbalancing" />
       <recent name="org.example.client" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DeadlineUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="18" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+  <component name="RunManager" selected="JUnit.NginxTestClient.getBalanceUnaryBlockingClient">
+    <configuration name="GrpcServer1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.loadbalancing.GrpcServer1" />
       <module name="grpc-rpc-types" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.bidirectional.streaming.*" />
+          <option name="PATTERN" value="org.example.loadbalancing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrpcServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.GrpcServer" />
+    <configuration name="GrpcServer2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.loadbalancing.GrpcServer2" />
       <module name="grpc-rpc-types" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.bidirectional.streaming.*" />
+          <option name="PATTERN" value="org.example.loadbalancing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,64 +147,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.deadline.GrpcServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.deadline.GrpcServer" />
+    <configuration name="NginxTestClient.getBalanceUnaryBlockingClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grpc-rpc-types" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.deadline.*" />
+          <option name="PATTERN" value="org.example.client.loadbalancing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="grpc-rpc-types" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.client" />
-      <option name="MAIN_CLASS_NAME" value="org.example.client.BankUnaryServerClientStreamingClients" />
+      <option name="PACKAGE_NAME" value="org.example.client.loadbalancing" />
+      <option name="MAIN_CLASS_NAME" value="org.example.client.loadbalancing.NginxTestClient" />
       <option name="METHOD_NAME" value="getBalanceUnaryBlockingClient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeadlineUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="grpc-rpc-types" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.client" />
-      <option name="MAIN_CLASS_NAME" value="org.example.client.DeadlineUnaryServerClientStreamingClients" />
-      <option name="METHOD_NAME" value="getBalanceUnaryBlockingClient" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="proto: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="src/main/proto/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="resources/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="src/main/resources/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.org.example.deadline.GrpcServer" />
-      <item itemvalue="Application.GrpcServer" />
-      <item itemvalue="JUnit.DeadlineUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient" />
-      <item itemvalue="JUnit.BankUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient" />
+      <item itemvalue="Application.GrpcServer1" />
+      <item itemvalue="Application.GrpcServer2" />
+      <item itemvalue="Docker.proto: Compose Deployment" />
+      <item itemvalue="Docker.resources/docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="JUnit.NginxTestClient.getBalanceUnaryBlockingClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DeadlineUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient" />
-        <item itemvalue="Application.org.example.deadline.GrpcServer" />
-        <item itemvalue="Application.GrpcServer" />
-        <item itemvalue="Application.GrpcServer" />
-        <item itemvalue="JUnit.BankUnaryServerClientStreamingClients.getBalanceUnaryBlockingClient" />
+        <item itemvalue="JUnit.NginxTestClient.getBalanceUnaryBlockingClient" />
+        <item itemvalue="Docker.resources/docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Application.GrpcServer2" />
+        <item itemvalue="Application.GrpcServer1" />
+        <item itemvalue="Docker.proto: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

@@ -1,4 +1,4 @@
-package org.example.bidirectional.streaming;
+package org.example.rpctypes.bidirectionalstreaming;
 
 import io.grpc.stub.StreamObserver;
 import org.example.proto.TransferRequest;

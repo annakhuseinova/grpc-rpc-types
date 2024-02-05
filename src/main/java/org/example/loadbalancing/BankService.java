@@ -1,8 +1,10 @@
-package org.example;
+package org.example.loadbalancing;
 
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 import org.example.proto.*;
+import org.example.rpctypes.AccountDatabase;
+import org.example.rpctypes.CashStreamingRequestObserver;
 
 public class BankService extends BankServiceGrpc.BankServiceImplBase {
 
@@ -11,6 +13,7 @@ public class BankService extends BankServiceGrpc.BankServiceImplBase {
     public void getBalance(BalanceCheckRequest request,
                            StreamObserver<Balance> responseObserver) {
         int accountNumber = request.getAccountNumber();
+        System.out.println("Received the request for account number: " + accountNumber);
         Balance balance = Balance.newBuilder()
                 .setAmount(AccountDatabase.getBalance(accountNumber))
                 .build();

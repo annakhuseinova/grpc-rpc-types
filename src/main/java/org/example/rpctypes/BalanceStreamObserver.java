@@ -1,4 +1,4 @@
-package org.example;
+package org.example.rpctypes;
 
 import io.grpc.stub.StreamObserver;
 import org.example.proto.Balance;

@@ -1,9 +1,9 @@
-package org.example.client;
+package org.example.client.deadline;
 
 import io.grpc.*;
 import io.grpc.stub.StreamObserver;
-import org.example.BalanceStreamObserver;
-import org.example.MoneyStreamingObserver;
+import org.example.rpctypes.BalanceStreamObserver;
+import org.example.rpctypes.MoneyStreamingObserver;
 import org.example.proto.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

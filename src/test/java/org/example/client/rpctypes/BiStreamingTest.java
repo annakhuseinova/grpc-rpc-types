@@ -1,9 +1,9 @@
-package org.example.client;
+package org.example.client.rpctypes;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
-import org.example.bidirectional.streaming.TransferResponseStreamObserver;
+import org.example.rpctypes.bidirectionalstreaming.TransferResponseStreamObserver;
 import org.example.proto.TransferRequest;
 import org.example.proto.TransferServiceGrpc;
 import org.junit.jupiter.api.BeforeAll;

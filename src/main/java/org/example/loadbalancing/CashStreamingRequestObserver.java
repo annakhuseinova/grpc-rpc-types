@@ -1,8 +1,9 @@
-package org.example.rpctypes;
+package org.example.loadbalancing;
 
 import io.grpc.stub.StreamObserver;
 import org.example.proto.Balance;
 import org.example.proto.DepositRequest;
+import org.example.rpctypes.AccountDatabase;
 
 // For client-streaming example.
 // Defines the actions the server will perform when having received client streaming
@@ -18,6 +19,7 @@ public class CashStreamingRequestObserver implements StreamObserver<DepositReque
     @Override
     public void onNext(DepositRequest depositRequest) {
         int accountNumber = depositRequest.getAccountNumber();
+        System.out.println("Received cash deposit for: " + accountNumber);
         int amount = depositRequest.getAmount();
         this.accountBalance = AccountDatabase.addBalance(accountNumber, amount);
     }

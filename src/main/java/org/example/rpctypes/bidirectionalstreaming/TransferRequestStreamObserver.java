@@ -1,7 +1,7 @@
-package org.example.bidirectional.streaming;
+package org.example.rpctypes.bidirectionalstreaming;
 
 import io.grpc.stub.StreamObserver;
-import org.example.AccountDatabase;
+import org.example.rpctypes.AccountDatabase;
 import org.example.proto.Account;
 import org.example.proto.TransferRequest;
 import org.example.proto.TransferResponse;
