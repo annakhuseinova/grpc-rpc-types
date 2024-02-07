@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07daf464-b2dd-4f9a-bc99-c20858065773" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/ClientConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tls/BankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tls/GrpcServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/ssl/BankSslClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/metadata/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/GrpcServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/metadata/MetadataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/MetadataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/MoneyStreamingObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/MoneyStreamingObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/bank-service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/bank-service.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Anna/IdeaProjects/grpc-rpc-types/src/main/java/org/example/metadata",
+    "last_opened_file_path": "C:/Users/Anna/IdeaProjects/grpc-rpc-types/src/main/java/org/example/tls",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +75,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\java\org\example\tls" />
       <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\java\org\example\metadata" />
       <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\java\org\example\loadbalancing" />
       <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\java\org\example\deadline" />
@@ -85,6 +84,7 @@
       <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.client.ssl" />
       <recent name="org.example.client.metadata" />
       <recent name="org.example.loadbalancing" />
       <recent name="org.example.client" />
