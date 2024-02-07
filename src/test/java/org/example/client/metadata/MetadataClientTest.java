@@ -1,20 +1,26 @@
-package org.example.client.deadline;
+package org.example.client.metadata;
 
-import io.grpc.*;
+import io.grpc.Deadline;
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
+import io.grpc.StatusRuntimeException;
+import io.grpc.stub.MetadataUtils;
 import io.grpc.stub.StreamObserver;
 import org.example.interceptor.DeadlineInterceptor;
+import org.example.metadata.UserSessionToken;
+import org.example.proto.*;
 import org.example.rpctypes.BalanceStreamObserver;
 import org.example.rpctypes.MoneyStreamingObserver;
-import org.example.proto.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class DeadlineUnaryServerClientStreamingClients {
+public class MetadataClientTest {
     private BankServiceGrpc.BankServiceBlockingStub blockingStub;
     private BankServiceGrpc.BankServiceStub asyncStub;
 
@@ -22,6 +28,7 @@ public class DeadlineUnaryServerClientStreamingClients {
     public void setUp(){
         // ManagedChannel is an object that represents HTTP2 connection between Client and Server
         ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 6565)
+                .intercept(MetadataUtils.newAttachHeadersInterceptor(ClientConstants.getClientToken()))
                 .intercept(new DeadlineInterceptor())
                 .usePlaintext()
                 .build();
@@ -35,17 +42,20 @@ public class DeadlineUnaryServerClientStreamingClients {
         BalanceCheckRequest request = BalanceCheckRequest.newBuilder()
                 .setAccountNumber(5)
                 .build();
-
-        try {
-            Balance balance = this.blockingStub
-                    .withDeadline(Deadline.after(2, TimeUnit.SECONDS))
-                    .getBalance(request);
-            System.out.println("Received balance: " + balance.getAmount());
-        } catch (StatusRuntimeException e){
-            // 4 status code - DEADLINE_EXCEEDED - so we handle the case appropriately
-            int value = e.getStatus().getCode().value();
-            if (value == 4){
-                return;
+        for (int i = 0; i < 20; i++) {
+            int randomNumber = ThreadLocalRandom.current().nextInt(1, 4);
+            try {
+                Balance balance = this.blockingStub
+                        .withCallCredentials(new UserSessionToken("user-secret-" + randomNumber + ":prime"))
+                        .withDeadline(Deadline.after(2, TimeUnit.SECONDS))
+                        .getBalance(request);
+                System.out.println("Received balance: " + balance.getAmount());
+            } catch (StatusRuntimeException e) {
+                // 4 status code - DEADLINE_EXCEEDED - so we handle the case appropriately
+                int value = e.getStatus().getCode().value();
+                if (value == 4) {
+                    return;
+                }
             }
         }
     }

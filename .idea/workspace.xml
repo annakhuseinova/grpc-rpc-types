@@ -5,30 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07daf464-b2dd-4f9a-bc99-c20858065773" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interceptor/DeadlineInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/AuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/GrpcServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/MetadataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/ServerConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/UserSessionToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/metadata/ClientConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/metadata/MetadataClientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/deadline/DeadlineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/deadline/DeadlineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/BankService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/CashStreamingRequestObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/CashStreamingRequestObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/GrpcServer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/GrpcServer1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/GrpcServer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/GrpcServer2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/ServiceRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/ServiceRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/TempNameResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/TempNameResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/TempNameResolverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/loadbalancing/TempNameResolverProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/AccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/AccountDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/BalanceStreamObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/BalanceStreamObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/BankService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/CashStreamingRequestObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/CashStreamingRequestObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/GrpcServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/MoneyStreamingObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/MoneyStreamingObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferRequestStreamObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferRequestStreamObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferResponseStreamObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferResponseStreamObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/bidirectionalstreaming/TransferService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/transfer-service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/transfer-service.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/deadline/DeadlineUnaryServerClientStreamingClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/deadline/DeadlineUnaryServerClientStreamingClients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/loadbalancing/ClientSideLoadBalancingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/loadbalancing/ClientSideLoadBalancingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/loadbalancing/NginxTestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/loadbalancing/NginxTestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/rpctypes/BankUnaryServerClientStreamingClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/rpctypes/BankUnaryServerClientStreamingClients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/rpctypes/BiStreamingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/rpctypes/BiStreamingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +27,7 @@
       <list>
         <option value="Record" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -80,7 +68,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Anna/IdeaProjects/grpc-rpc-types/src/main/java/org/example/loadbalancing",
+    "last_opened_file_path": "C:/Users/Anna/IdeaProjects/grpc-rpc-types/src/main/java/org/example/metadata",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -94,6 +82,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\java\org\example\metadata" />
       <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\java\org\example\loadbalancing" />
       <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\java\org\example\deadline" />
     </key>
@@ -101,6 +90,7 @@
       <recent name="C:\Users\Anna\IdeaProjects\grpc-rpc-types\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.client.metadata" />
       <recent name="org.example.loadbalancing" />
       <recent name="org.example.client" />
     </key>
