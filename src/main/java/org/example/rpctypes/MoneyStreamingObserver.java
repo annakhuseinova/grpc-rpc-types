@@ -1,7 +1,10 @@
 package org.example.rpctypes;
 
+import io.grpc.Metadata;
+import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 import org.example.proto.Money;
+import org.example.proto.WithdrawalError;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -21,6 +24,10 @@ public class MoneyStreamingObserver implements StreamObserver<Money> {
 
     @Override
     public void onError(Throwable throwable) {
+        Status status = Status.fromThrowable(throwable);
+        Metadata metadata = Status.trailersFromThrowable(throwable);
+        WithdrawalError withdrawalError = metadata.get(ClientConstants.WITHDRAWAL_ERROR_KEY);
+        System.out.println(withdrawalError.getAmount() + " : " + withdrawalError.getErrorMessage());
         System.out.println(throwable.getMessage());
         latch.countDown();
     }

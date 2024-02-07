@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07daf464-b2dd-4f9a-bc99-c20858065773" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interceptor/DeadlineInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/AuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/GrpcServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/MetadataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/ServerConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/UserSessionToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/metadata/ClientConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/client/metadata/MetadataClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/ClientConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/client/deadline/DeadlineUnaryServerClientStreamingClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/client/deadline/DeadlineUnaryServerClientStreamingClients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/metadata/GrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/GrpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/metadata/MetadataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/metadata/MetadataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/MoneyStreamingObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rpctypes/MoneyStreamingObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/bank-service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/bank-service.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>

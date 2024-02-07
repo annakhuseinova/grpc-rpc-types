@@ -1,14 +1,12 @@
 package org.example.metadata;
 
-import com.google.common.util.concurrent.Uninterruptibles;
-import io.grpc.Context;
+import io.grpc.Metadata;
 import io.grpc.Status;
+import io.grpc.protobuf.ProtoUtils;
 import io.grpc.stub.StreamObserver;
 import org.example.proto.*;
 import org.example.rpctypes.AccountDatabase;
 import org.example.rpctypes.CashStreamingRequestObserver;
-
-import java.util.concurrent.TimeUnit;
 
 public class MetadataService extends BankServiceGrpc.BankServiceImplBase {
 
@@ -35,27 +33,28 @@ public class MetadataService extends BankServiceGrpc.BankServiceImplBase {
         int accountNumber = request.getAccountNumber();
         int amount = request.getAmount();
         int balance = AccountDatabase.getBalance(accountNumber);
+        if (amount < 10 || (amount % 10) != 0){
+            Metadata metadata = new Metadata();
+            Metadata.Key<WithdrawalError> errorKey = ProtoUtils.keyForProto(WithdrawalError.getDefaultInstance());
+            WithdrawalError error = WithdrawalError.newBuilder().setAmount(balance).setErrorMessage(ErrorMessage.ONLY_TEN_MULTIPLES).build();
+            metadata.put(errorKey, error);
+            responseObserver.onError(Status.FAILED_PRECONDITION.asRuntimeException(metadata));
+        }
 
         //
         if (balance < amount){
-            Status status = Status.FAILED_PRECONDITION.withDescription("Not enough money. You have only " + balance);
-            responseObserver.onError(status.asRuntimeException());
+            Metadata metadata = new Metadata();
+            Metadata.Key<WithdrawalError> errorKey = ProtoUtils.keyForProto(WithdrawalError.getDefaultInstance());
+            WithdrawalError error = WithdrawalError.newBuilder().setAmount(balance).setErrorMessage(ErrorMessage.INSUFFICIENT_BALANCE).build();
+            metadata.put(errorKey, error);
+            responseObserver.onError(Status.FAILED_PRECONDITION.asRuntimeException(metadata));
             return;
         }
         // all validations passed
         for (int i = 0; i < (amount/10); i++) {
             Money money = Money.newBuilder().setValue(10).build();
-
-            // Simulating time-consuming call ...
-            Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-            // Context object represents information about the current rpc.
-            if (!Context.current().isCancelled()){
-                responseObserver.onNext(money);
-                System.out.println("Delivered 10$");
-                AccountDatabase.deductBalance(accountNumber, 10);
-            } else {
-                break;
-            }
+            responseObserver.onNext(money);
+            AccountDatabase.deductBalance(accountNumber, 10);
         }
         System.out.println("Completed!");
         responseObserver.onCompleted();
